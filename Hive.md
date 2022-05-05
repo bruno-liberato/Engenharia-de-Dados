@@ -1,5 +1,6 @@
 ## Etapa 1: Verificando a instalação JAVA
 
+<table ><tr><td bgcolor=#bfe1f1 >### Etapa I:</td></tr></table> 
 
 
 ## Instalando o Java
