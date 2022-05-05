@@ -1,4 +1,7 @@
-## 1 - INSTAÇÃO DO JAVA
+| 1 - INSTAÇÃO DO JAVA |
+| -------------------- |
+
+## 
 
 ### Etapa I
 
