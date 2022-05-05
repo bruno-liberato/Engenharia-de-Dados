@@ -1,21 +1,21 @@
 | 1 - INSTAÇÃO DO JAVA |
-| -------------------- |
+| :------------------: |
 
 ## 
 
-### Etapa I
+#### Etapa I
 
 ```shell
 wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" https://javadl.oracle.com/webapps/download/GetFile/1.8.0_281-b09/89d678f2be164786b292527658ca1605/linux-i586/jdk-8u281-linux-x64.tar.gz
 ```
 
-### Etapa II
+#### Etapa II
 
 ```shell
 tar -zxvf jdk-8u281-linux-x64.tar.gz
 ```
 
-### Etapa III
+#### Etapa III
 
 ```shell
 sudo mv jdk1.8.0_281/ /opt/jdk
