@@ -1,29 +1,24 @@
-## Etapa 1: Verificando a instalação JAVA
+## 1 - instalação JAVA
 
-<table ><tr><td bgcolor=#bfe1f1 >### Etapa I:</td></tr></table> 
-
-
-## Instalando o Java
-
-### Etapa I:
+### Etapa I
 
 ```shell
 wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" https://javadl.oracle.com/webapps/download/GetFile/1.8.0_281-b09/89d678f2be164786b292527658ca1605/linux-i586/jdk-8u281-linux-x64.tar.gz
 ```
 
-### Etapa II:
+### Etapa II
 
 ```shell
 tar -zxvf jdk-8u281-linux-x64.tar.gz
 ```
 
-### Etapa III:
+### Etapa III
 
 ```shell
 sudo mv jdk1.8.0_281/ /opt/jdk
 ```
 
-### Etapa IV:
+### Etapa IV
 
 Para configurar as variáveis **PATH** e **JAVA_HOME**, adicione os seguintes comandos ao arquivo **~/.bashrc.**
 
@@ -31,7 +26,7 @@ Para configurar as variáveis **PATH** e **JAVA_HOME**, adicione os seguintes co
 sudo nano ~/.bashrc
 ```
 
-### Etapa V:
+### Etapa V
 
 Incluir no final do arquivo as variárias de ambiente do JAVA.
 
@@ -49,9 +44,9 @@ Agora aplique todas as alterações no sistema em execução atual.
 source ~/.bashrc
 ```
 
-### Etapa VI: baixar o Hive
+### 2 - Instalação  do Hive
 
-Usamos hive-0.14.0 neste tutorial. Você pode baixá-lo visitando o seguinte link [http://apache.petsads.us/hive/hive-0.14.0/. ](http://apache.petsads.us/hive/hive-0.14.0/)Vamos supor que ele seja baixado no diretório /Downloads. Aqui, baixamos o arquivo Hive chamado “apache-hive-0.14.0-bin.tar.gz” para este tutorial. O seguinte comando é usado para verificar o download:
+### **Etapa I**
 
 ```SHELL
 wget https://downloads.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gzshe
@@ -63,11 +58,11 @@ No download bem-sucedido, você verá a seguinte resposta:
 apache-hive-3.1.3-bin.tar.gz
 ```
 
-## Etapa 6: Instalando o Hive
+## Etapa II
 
 As etapas a seguir são necessárias para instalar o Hive em seu sistema.
 
-### Extraindo e verificando o Hive Archive
+### Etapa III
 
 O comando a seguir é usado para verificar o download e extrair o arquivo hive:
 
@@ -75,7 +70,7 @@ O comando a seguir é usado para verificar o download e extrair o arquivo hive:
 tar -zxvf apache-hive-3.1.3-bin.tar.gz
 ```
 
-### Copiando arquivos para o diretório /opt/hive
+### Etapa IV
 
 Precisamos copiar os arquivos do superusuário “su -”. Os comandos a seguir são usados para copiar os arquivos do diretório extraído para o diretório /usr/local/hive”.
 
@@ -83,7 +78,9 @@ Precisamos copiar os arquivos do superusuário “su -”. Os comandos a seguir 
 sudo mv apache-hive-3.1.3-bin /opt/hive
 ```
 
-### Configurando o ambiente para o Hive
+### Etapa IV 
+
+Configurando o ambiente para o Hive
 
 Você pode configurar o ambiente Hive anexando as seguintes linhas ao arquivo **~/.bashrc** :
 
@@ -104,7 +101,7 @@ O comando a seguir é usado para executar o arquivo ~/.bashrc.
 $ source ~/.bashrc
 ```
 
-## Etapa 5: configurar o Hive
+## Etapa V
 
 Para configurar o Hive com o Hadoop, você precisa editar o arquivo **hive-env.sh**. Os comandos a seguir redirecionam para a pasta de **configuração** do Hive e copiam o arquivo de modelo:
 
@@ -124,7 +121,7 @@ export HADOOP_HOME=/usr/local/hadoop
 
 
 
-## Etapa 7: configurando o metastore do Hive
+## Etapa VI
 
 Configurar o Metastore significa especificar para o Hive onde o banco de dados está armazenado. Você pode fazer isso editando o arquivo hive-site.xml, que está no diretório $HIVE_HOME/conf. Antes de tudo, copie o arquivo de modelo usando o seguinte comando:
 
@@ -165,7 +162,7 @@ javax.jdo.option.ConnectionUserName = APP
 javax.jdo.option.ConnectionPassword = mine
 ```
 
-## Etapa 8: Verificando a instalação do Hive
+## Etapa VII 
 
 Antes de executar o Hive, você precisa criar a pasta **/tmp** e uma pasta Hive separada no HDFS. Aqui, usamos a pasta **/user/hive/warehouse .** Você precisa definir a permissão de gravação para essas pastas recém-criadas, conforme mostrado abaixo:
 
@@ -206,5 +203,3 @@ OK
 Time taken: 2.798 seconds 
 hive>
 ```
-
-## Cursos úteis em vídeo
