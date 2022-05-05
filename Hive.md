@@ -1,4 +1,4 @@
-## 1 - instalação JAVA
+## 1 - INSTAÇÃO DO JAVA
 
 ### Etapa I
 
@@ -44,7 +44,7 @@ Agora aplique todas as alterações no sistema em execução atual.
 source ~/.bashrc
 ```
 
-### 2 - Instalação  do Hive
+### 2 - INSTALAÇÃO DO HIVE
 
 ### **Etapa I**
 
